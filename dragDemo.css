@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;600&display=swap');
+/* font-family: 'Kufam', cursive; */
+.computer {
+  width: 93px;
+  height: 98px;
+  background: url(https://js.cx/clipart/computer.gif) no-repeat;
+  padding: 5px;
+  font-style: italic;
+}
+
+.computer-smile {
+  background: url(https://js.cx/clipart/computer-smile.gif) no-repeat;
+}
+
+.draggable {
+  cursor: pointer;
+}
+.row{
+  margin-top: 1em;
+}
+.font-family-kafam{
+  font-family: 'Kufam', cursive;
+  font-weight: 100;
+}
