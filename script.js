@@ -7,5 +7,6 @@ draggie.on('pointerUp', function (event, pointer) {
 
     if (pointer.pageX > rect.left && pointer.pageX < rect.right&&pointer.pageY>rect.top&&pointer.pageY<rect.bottom) {
         console.log(pointer.pageX, pointer.pageY);
+        div_new.classList.remove('bg-success');
     }
 });
