@@ -7,6 +7,11 @@ draggie.on('pointerUp', function (event, pointer) {
 
     if (pointer.pageX > rect.left && pointer.pageX < rect.right&&pointer.pageY>rect.top&&pointer.pageY<rect.bottom) {
         console.log(pointer.pageX, pointer.pageY);
-        div_new.classList.remove('bg-success');
+        var div_new_new =event.target.cloneNode(true);
+        div_new_new.removeAttribute('style');
+        div_new_new.classList.remove('m-5');
+        div_new.append(div_new_new);
+        event.target.remove();
+    //    .classList.remove('btn-light'); 
     }
 });
