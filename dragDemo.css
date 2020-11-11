@@ -4,6 +4,7 @@ body{
   font-family: 'Playfair Display', serif;
 }
 .mydiv{
-  width: 15em;
-  height: 15em;
+  min-width: 15em;
+  min-height: 15em;
+
 }
