@@ -18,7 +18,6 @@ body{
   height: 100%;
 }
 .transfer-correctly{
-  background-color: #e0e0e0;
 }
 .transfer-correctly-droppable-place{
 height: fit-content;
@@ -27,6 +26,8 @@ background-color: #f8f9fa;
 }
 .transfer-correctly-droppable{
   border-style: dashed !important;
+  border-width: 1px !important;
+
 }
 .h-inherit{
   height: inherit;
