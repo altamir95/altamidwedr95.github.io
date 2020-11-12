@@ -27,6 +27,7 @@ background-color: #f8f9fa;
 .transfer-correctly-droppable{
   border-style: dashed !important;
   border-width: 1px !important;
+  
 
 }
 .h-inherit{
@@ -34,5 +35,4 @@ background-color: #f8f9fa;
 }
 .border-dotted{
   border-style: dotted !important;
-
 }

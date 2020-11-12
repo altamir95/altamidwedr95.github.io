@@ -47,16 +47,16 @@ for (var i = 0; i < draggableElems.length; i++) {
         }
     });
 }
-// document.getElementById('bts').onclick = function(){
-//     var itogarab = document.getElementById('arab');
-//     var allitogarab = itogarab.getElementsByClassName('draggable');
-//     for(var i = 0;i < allitogarab.length;i++){
-//         if(array_rus.indexOf( allitogarab[i].innerHTML ) != -1){
-//             document.getElementById('arab').classList.remove('bg-success');
-//             document.getElementById('arab').classList.add('btn-danger');
-//         }
-//     }
-// };
+document.getElementById('checking-transfer-correctly').onclick = function(){
+    var itogarab = document.getElementById('arab');
+    var allitogarab = itogarab.getElementsByClassName('draggable');
+    for(var i = 0;i < allitogarab.length;i++){
+        if(array_rus.indexOf( allitogarab[i].innerHTML ) != -1){
+            document.getElementById('arab').classList.remove('bg-success');
+            document.getElementById('arab').classList.add('btn-danger');
+        }
+    }
+};
 
 
 
