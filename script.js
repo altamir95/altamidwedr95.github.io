@@ -1,20 +1,18 @@
 var array_arab = ['جَمِيلٌ', 'جَدِيدٌ', 'قَدِيم', 'كَبِيرٌ', 'صَغِيرٌ', 'يَسْكُنُ', 'نَشِيطٌ'];
-var array_rus = ['активный', 'жимет', 'маленький', 'большой', 'старый', 'новый', 'красивый'];
 
-// for (var i = 0; i < array_arab.length; i++) {
-//     create_Element({
-//         tagName: 'div',
-//         internals: array_arab[i],
-//         class: ['btn', 'btn-light', 'btn-lg', 'm-1', 'draggable'],
-//         appendPlace: document.body
-//     });
-//     create_Element({
-//         tagName: 'div',
-//         internals: array_rus[i],
-//         class: ['btn', 'btn-light', 'btn-lg', 'm-1', 'draggable'],
-//         appendPlace: document.body
-//     });
-// }
+var array_noun = ['نَشِيطٌ', 'صَغِيرٌ', 'كَبِيرٌ', 'قَدِيم', 'جَدِيدٌ', 'جَمِيلٌ'];
+var array_verb = ['يَسْكُنُ'];
+var array_particle = [];
+
+
+for (var i = 0; i < array_arab.length; i++) {
+    create_Element({
+        tagName: 'div',
+        internals: array_arab[i],
+        class: ['btn','btn-sm','btn-outline-dark','border-dotted','draggable','m-1'],
+        appendPlace: document.querySelector('.draggables-place')
+    });
+}
 
 
 var draggableElems = document.querySelectorAll('.draggable');
@@ -48,12 +46,30 @@ for (var i = 0; i < draggableElems.length; i++) {
     });
 }
 document.getElementById('checking-transfer-correctly').onclick = function(){
-    var itogarab = document.getElementById('arab');
-    var allitogarab = itogarab.getElementsByClassName('draggable');
-    for(var i = 0;i < allitogarab.length;i++){
-        if(array_rus.indexOf( allitogarab[i].innerHTML ) != -1){
-            document.getElementById('arab').classList.remove('bg-success');
-            document.getElementById('arab').classList.add('btn-danger');
+    var nounPlace = document.getElementById('noun');
+    var verbPlace = document.getElementById('verb');
+    var particlePlace = document.getElementById('particle');
+
+    var nounPlaceElem = nounPlace.getElementsByClassName('draggable');
+    var verbPlaceElem = verbPlace.getElementsByClassName('draggable');
+    var particlePlaceElem = particlePlace.getElementsByClassName('draggable');
+
+    for(var i = 0;i < nounPlaceElem.length;i++){
+        if(array_noun.indexOf( nounPlaceElem[i].innerHTML ) == -1){
+            // document.getElementById('noun').classList.remove('bg-success');
+            document.getElementById('noun').style.background = 'black';
+        }
+    }
+    for(var i = 0;i < verbPlaceElem.length;i++){
+        if(array_verb.indexOf( verbPlaceElem[i].innerHTML ) == -1){
+            // document.getElementById('verb').classList.remove('bg-success');
+            document.getElementById('verb').style.background = 'black';
+        }
+    }
+    for(var i = 0;i < particlePlaceElem.length;i++){
+        if(array_rus.indexOf( particlePlaceElem[i].innerHTML ) == -1){
+            // document.getElementById('particle').classList.remove('bg-success');
+            document.getElementById('particle').style.background = 'black';
         }
     }
 };
