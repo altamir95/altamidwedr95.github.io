@@ -36,3 +36,10 @@ background-color: #f8f9fa;
 .border-dotted{
   border-style: dotted !important;
 }
+.droppable{
+  transition: 2s!important;
+}
+.droppable:hover{
+  background-color: black!important;
+  width: 1px!important;
+}

@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link " href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -38,52 +38,26 @@
   </header>
   <main class="container-fluid flex-grow-1 d-flex flex-column">
     <div class="row flex-grow-1 justify-content-center">
-      <article class="col-12 col-sm-9 col-lg-9 col-md-9 col-xl-9 order-1 mt-3">
-        
-        <div class="place-transfer-correctly d-flex flex-column" id="transfer-correctly">
-          <h3 class="text-center">Рассортируйте правильно слова по столбикам</h3>
-          <div class="transfer-correctly container-fluid d-flex flex-column  flex-grow-1 m-0">
+      <article class="col-12 col-sm-9 col-lg-9 col-md-9 col-xl-9 order-1 m-3">
 
-            <div class="row  flex-grow-1 ">
-
-              <div
-                class="col col-sm col-md col-lg col-xl  transfer-correctly-droppable-place m-1 m-sm-5 m-lg-5 m-md-5 m-xl-5 p-2  h-inherit d-flex flex-column shadow-lg">
-                <h5 class="text-center">Имя</h5>
-                <div
-                  class="transfer-correctly-droppable flex-grow-1 d-flex d-xl-block border-secondary  flex-column align-items-center droppable">
-                </div>
-              </div>
-
-              <div
-                class="col col-sm col-md col-lg col-xl  transfer-correctly-droppable-place m-1 m-sm-5 m-lg-5 m-md-5 m-xl-5 p-2   h-inherit d-flex flex-column shadow-lg">
-                <h5 class="text-center">Глагол</h5>
-                <div
-                  class="transfer-correctly-droppable flex-grow-1 d-flex d-xl-block border-secondary flex-column align-items-center droppable">
-                </div>
-              </div>
-
-              <div
-                class="col col-sm col-md col-lg col-xl  transfer-correctly-droppable-place m-1 m-sm-5 m-lg-5 m-md-5 m-xl-5 p-2   h-inherit d-flex flex-column shadow-lg">
-                <h5 class="text-center">Частица</h5>
-                <div
-                  class="transfer-correctly-droppable flex-grow-1 d-flex d-xl-block border-secondary flex-column align-items-center droppable">
-                </div>
-              </div>
+        <div class="v-100 h-100 bg-dark container-fluid">
+          <div class="row">
+            <div class="col bg-light m-3  droppable  rounded-circle">cc</div>
+            <div class="col">
+              <button type="button" class="btn btn-dark draggable" style="z-index: 9999;">Темный</button>
             </div>
-            <div class="bg-light m-3 p-3 border border-dark shadow-lg">
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">جَمِيلٌ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">جَدِيدٌ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">قَدِيمٌ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">كَبِيرٌ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">صَغِيرٌ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">يَسْكُنُ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">نَشِيطٌ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">إِقْرَأْ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">خُذْ</button>
-              <button type="button" class="btn btn-sm btn-outline-dark  border-dotted draggable m-1">خَرَجَ</button>
-            </div>
-            <button type="button" class="btn btn-secondary btn-lg m-2  align-self-center" id="checking-transfer-correctly">ПРОВЕРИТЬ</button>
+
+            <div class="col bg-light m-3 droppable rounded-circle">ccc</div>
           </div>
+          <script>
+            for (var i = 0; i < document.getElementsByClassName("droppable").length; i++) {
+              // document.getElementsByClassName("droppable")[i].style.width='2px'
+              document.getElementsByClassName("droppable")[i].style.height = document.getElementsByClassName("droppable")[i].offsetWidth + 'px';
+            }
+          </script>
+
+
+
         </div>
 
       </article>
@@ -101,11 +75,10 @@
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></scrip >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossorigin="anonymous"></script>
   <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -119,7 +92,7 @@
   <!-- D&D -->
   <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
   <!-- MY SCRIPT -->
-  <script src="/script.js"></script>
+  <script src="/script2.js"></script>
 </body>
 
 </html>
