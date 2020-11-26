@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <header class="shadow-lg d-flex flex-row  navbar navbar-expand-lg navbar-light bg-dark ">
+
+        <a class="navbar-brand d-flex flex-row m-0 " href="#">
+            <h2 class="text-white align-self-center m-0 font-weight-light">ДАРС.РУ</h2>
+            <p style="font-size: 0.5em;" class="text-white  align-self-center m-0 ml-1">Знания<br>для всех</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex-grow-1 bg-dark d-flex flex-column">
+        <article class=" d-flex flex-column flex-grow-1">
+
+        </article>
+    </main>
+    <footer class="shadow-lg bg-dark">
+        <p class="text-center text-white p-4 m-0">Copyright © dars.ru, 2012-2020. Все права защищены.</p>
+    </footer>
+
+    <script src="/dist/js/jquery-3.5.1.min.js"></script>
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/dist/js/draggabilly.pkgd.min.js"></script>
+
+    <script>
+
+    </script>
+    <script src="/js/script.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 0
+        })
+        $.getJSON('/json/articles.json', function (data) {
+            var caruselForGames = new CaruselForGames(data[0].exercise);
+            var gameDragAndDrop = new GameMillionire(0, data[0].exercise[0]);
+            var gameDragAndDrop = new GameDragAndDrop(1, data[0].exercise[1].wordsAllGroups);
+        });
+    </script>
+</body>
+
+</html>

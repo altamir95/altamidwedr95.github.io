@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
+/* font-family: 'Xanh Mono', monospace; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Noto Sans JP', sans-serif; */
+.img-brightness {
+  transition: 0.2s;
+}
+.img-brightness:hover {
+  filter: brightness(80%) !important;
+}
+.img-width-100percent {
+  max-width: 100%;
+}
+.lvl-num-div {
+  width: 10em;
+  height: 10em;
+  font-family: "Cormorant Garamond", serif;
+  /* transition: all 0.3s ease-in-out;
+    border-width: 2px !important; */
+}
+.btn-outline-none {
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+.shadow-circle-img {
+  transition: 0.3s;
+}
+.shadow-circle-img:active {
+  box-shadow: 0 0 3px;
+}
+.h-2em {
+  height: 2em;
+}
+.w-initial {
+  width: initial;
+}
+.text-justify {
+  text-align: justify;
+}
+.min-vh-75 {
+  min-height: 75vh;
+}
+.bordr-dashed {
+  border-style: dashed !important;
+}
+.bordr-dotted {
+  border-style: dotted !important;
+}
+.bg-light {
+  background-color: #e2e2e2 !important;
+}
+.shadow-hard {
+  box-shadow: 0 0 4px 0.5px;
+  background-color: black;
+}
+.bg-danger-important {
+  background-color: red !important;
+}
+article div div div:first-child div .prev  {
+  visibility: hidden;
+}
+article div div div:last-child div .next {
+  visibility: hidden;
+}
+.radio-style input[type="radio"] {
+  display: none;
+}
+.radio-style label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 18px;
+  user-select: none;
+  transition: 0.3s;
+}
+.radio-style label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 2.5em;
+  background: url(/img/radio-2.png) 0 0 no-repeat;
+  transition: 0.3s;
+}
+/* Checked */
+.radio-style input[type="radio"]:checked + label:before {
+  background: url(/img/radio-1.png) 0 0 no-repeat;
+}
+/* Hover */
+.radio-style label:hover:before {
+  filter: brightness(120%);
+}
+/* Hover */
+.radio-style label:hover {
+  /* background-color: rgb(207, 207, 207); */
+}
+/* Disabled */
+.radio-style input[type="radio"]:disabled + label:before {
+  filter: grayscale(100%);
+}
+/* Checked */
+.radio-style input[type="radio"]:checked + label {
+  box-shadow: 0 0 15px 0.5px;
+}
+
+.btn-next-prev {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: large;
+  width: 2em;
+  height: 2em;
+  font-weight: 500;
+}
