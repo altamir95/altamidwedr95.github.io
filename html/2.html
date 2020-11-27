@@ -43,7 +43,7 @@
 
     <script>
       $.getJSON("/json/articles.json", function (data) {
-        $.each(data[0].article[0].text, function (index, value) {
+        $.each(data[0].article[1].text, function (index, value) {
           $('<'+value.tagName+' src="'+value.src+'">'+value.text+'</'+value.tagName+'>').appendTo('article');
           console.log($('<'+value.tagName+' src="'+value.src+'">'+value.text+'</'+value.tagName+'>'))
         });
