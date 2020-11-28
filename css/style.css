@@ -10,9 +10,24 @@
 /* font-family: 'IBM Plex Serif', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* font-family: 'Raleway', sans-serif; */
-
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+/* font-family: 'Tajawal', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Rubik', sans-serif; */
 /* █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ */
-
+.arab {
+  font-family: "Tajawal", sans-serif;
+  font-size: 29px;
+  font-weight: 500 !important;
+  line-height: 0px !important;
+  
+}
+.rus {
+  font-family: "Rubik", sans-serif;
+  font-size: 29px;
+  font-weight: 400 !important;
+  line-height: 44px !important;
+}
 article > h1 {
   font-family: "Raleway", sans-serif !important;
   text-align: center;
@@ -37,6 +52,12 @@ article > img {
   article > p {
     font-size: 14px;
   }
+}
+.shadow-lg-hover {
+  transition: 0.3s;
+}
+.shadow-lg-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.479) !important;
 }
 
 article > table {
@@ -69,7 +90,11 @@ article > table tr td:last-child {
 }
 
 /* █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ */
-
+.bg-dark-gradient {
+  background: -webkit-linear-gradient(225deg, rgb(187, 182, 182), rgb(66, 66, 70) 100%);
+  background: -moz-linear-gradient(225deg, rgb(187, 182, 182), rgb(66, 66, 70) 100%);
+  background: linear-gradient(225deg, rgb(187, 182, 182), rgb(66, 66, 70) 100%);
+}
 .img-brightness {
   transition: 0.2s;
 }
@@ -139,8 +164,8 @@ article > table tr td:last-child {
 .lock-img::after {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-left: 0.5em;
   margin-right: 0.5em;
   background: url(/img/lock.png) 0 0 no-repeat;
@@ -148,8 +173,8 @@ article > table tr td:last-child {
 .unlock-img::after {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-left: 0.5em;
   margin-right: 0.5em;
   background: url(/img/unlock.png) 0 0 no-repeat;
@@ -181,6 +206,73 @@ article > table tr td:last-child {
   background: url(/img/icon_history.png) 0 0 round;
   transition: 0.3s;
 }
+.btn-add-icon {
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+  width: 0px;
+  height: 0px;
+  margin-right: 13px;
+
+}
+.btn-add-icon:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(/img/add.png) 0 0 round;
+}
+.btn-add-icon:hover{
+  filter: brightness(110%);
+}
+.btn-add-icon:active{
+  filter: brightness(120%);
+}
+
+.btn-volume-icon {
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+  width: 0px;
+  height: 0px;
+  margin-right: 13px;
+}
+.btn-volume-icon:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(/img/volume.png) 0 0 round;
+}
+.btn-volume-icon:hover{
+  filter: brightness(110%);
+}
+.btn-volume-icon:active{
+  filter: brightness(120%);
+}
+
+.btn-delete-icon {
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+  width: 0px;
+  height: 0px;
+  margin-right: 13px;
+}
+.btn-delete-icon:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(/img/delete.png) 0 0 round;
+}
+.btn-delete-icon:hover{
+  filter: brightness(110%);
+}
+.btn-delete-icon:active{
+  filter: brightness(120%);
+}
+
 .bg-danger-important {
   background-color: red !important;
 }
@@ -204,8 +296,8 @@ article div div div:last-child div .next {
 .radio-style label:before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   padding-left: 2.5em;
   background: url(/img/radio-2.png) 0 0 no-repeat;
   transition: 0.3s;
