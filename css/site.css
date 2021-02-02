@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+
+.nav-link {
+  border-left: 0px solid yellow;
+  color: black !important;
+  transition-duration: 0.2s;
+}
+.nav-link:hover,
+.nav-link-active {
+  border-left: 20px solid yellow;
+}
+a {
+  /**
+     * Для эксплорера
+     */
+  -ms-user-select: none;
+
+  /**
+     * Для мозилы
+     */
+  -moz-user-select: none;
+
+  /**
+     * Для конкверора
+     */
+  -khtml-user-select: none;
+
+  /**
+     * Для Сафари и Хрома
+     */
+  -webkit-user-select: none;
+}
+
+.image {
+  position: relative;
+}
+/* IMAGE IN INDEX */
+.image p {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  padding: 10px;
+  padding-bottom: 2px;
+  /* background		: rgba(0, 0, 0, 0.7); */
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 32px;
+}
+.image p small {
+  border-top-width: 5px !important;
+  font-size: 20px;
+}
+.image p span {
+  font-size: 30px;
+}
+/*  */
+/*  */
+/* IMAGE IN BLOG */
+.imageBlog {
+  position: relative;
+  width: 100%;
+}
+
+/*  */
+/* ARTICLE BLIG */
+.imageBlog h2 {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  padding: 10px;
+  background-color: yellow;
+  font-size: 20px;
+  font-family: "Gabriela", serif;
+}
+
+.articleBlog p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px;
+}
+@media (min-width: 576px) {
+  .imageBlog h2 {
+    font-size: 25px;
+  }
+  .articleBlog p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .imageBlog h2 {
+    font-size: 30px;
+  }
+  .articleBlog p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .imageBlog h2 {
+    font-size: 35px;
+  }
+  .articleBlog p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .imageBlog h2 {
+    font-size: 40px;
+  }
+  .articleBlog p {
+    font-size: 35px;
+  }
+}
+
+/* blog-article */
+.blog-article p {
+  font-size: 16px;
+  text-indent: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+@media (min-width: 576px) {
+  .blog-article p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .blog-article p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .blog-article p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog-article p {
+    font-size: 20px;
+  }
+}
+/*  */
+
+/* about-page */
+/* about-page */
+/* about-page */
+/* about-page */
+.about-page div div p {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: justify;
+}
+.about-page div div h1 {
+  font-family: "Gabriela", serif;
+  text-align: justify;
+}
+.about-page div  img {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: justify;
+  width: 25% !important;
+}
+@media (min-width: 576px) {
+  .about-page div div p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .about-page div div p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .about-page div div p {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+}
+@media (min-width: 1200px) {
+  .about-page div div p {
+    padding-left: 90px;
+    padding-right: 90px;
+    
+  }
+}
+/* about-page */
+/* about-page */
+/* about-page */
+/* about-page */
+/* about-page */
+
+
+/* ORDER FORM */
+.ordered-form h1{
+  font-family: "Gabriela", serif;
+
+}
+.ordered-form{
+  font-family: "Montserrat Alternates", sans-serif;
+
+}
+/* ORDER FORM */
+
+
+
+
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 100px;
+  }
+  /* Оформление панели */
+  #side-checkbox {
+    display: none;
+  }
+  .side-panel {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: -360px;
+    background: rgb(250, 250, 250);
+    transition: all 0.5s;
+    width: 320px;
+    height: 100vh;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 40px 20px;
+  }
+  .side-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #bfe2ff;
+  }
+  /* Оформление кнопки на странице */
+  .side-button-1-wr {
+    text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+  }
+  .side-button-1 .side-b {
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", Тahoma, sans-serif;
+    background: #337ab7;
+    cursor: pointer;
+    border: 2px solid #bfe2ff;
+  }
+  .side-button-1 .side-b:hover,
+  .side-button-1 .side-b:active,
+  .side-button-1 .side-b:focus {
+    color: #fff;
+  }
+  .side-button-1 .side-b:after,
+  .side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+  }
+  .side-button-1 .side-open:after,
+  .side-button-1 .side-open:before {
+    background: green;
+  }
+  .side-button-1 .side-close:after,
+  .side-button-1 .side-close:before {
+    background: red;
+  }
+  .side-button-1 .side-b:before {
+    top: -6px;
+  }
+  .side-button-1 .side-b:hover:after,
+  .side-button-1 .side-b:hover:before {
+    width: 100%;
+    left: 0;
+  }
+  /* Переключатели кнопки 1 */
+  .side-button-1 .side-close {
+    display: none;
+  }
+  #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+  }
+  #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+  }
+  #side-checkbox:checked + .side-panel {
+    left: 0;
+  }
+  /* Оформление кнопки на панеле */
+  .side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #000000;
+    transition: all 280ms ease-in-out;
+  }
+  .side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);
+    color: #fff;
+  }
+}
